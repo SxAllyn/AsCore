@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.Title</title>
+<environment include="Development">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="@Url.Content("~/lib/googleapis-fonts/fonts.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/font-awesome/css/font-awesome.min.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/ionicons/css/ionicons.min.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/toastr/toastr.min.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/bootstrap/css/bootstrap.min.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/adminlte/css/adminlte.min.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/adminlte/css/skins/_all-skins.min.css")" rel="stylesheet" asp-append-version="true" />
+    <link href="@Url.Content("~/lib/bootstrapValidator/css/bootstrapValidator.min.css")" rel="stylesheet" asp-append-version="true" />
+</environment>
+@RenderSection("Styles", false)
+</head>
+<body class="hold-transition skin-blue fixed sidebar-mini">
+
+@RenderBody()
+<environment include="Development">
+    <script src="@Url.Content("~/lib/jquery/jquery-1.12.4.min.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/cookies/jquery.cookie.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/fastclick/fastclick.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/toastr/toastr.min.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/knockout/knockout-3.4.2.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/knockout/knockout.mapping-2.4.1.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/bootstrap/js/bootstrap.min.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/bootstrapValidator/js/bootstrapValidator.min.js")" asp-append-version="true"></script>
+    <script src="@Url.Content("~/lib/adminlte/js/adminlte.min.js")" asp-append-version="true"></script>
+</environment>
+@RenderSection("Scripts", false)
+</body>
+</html>
