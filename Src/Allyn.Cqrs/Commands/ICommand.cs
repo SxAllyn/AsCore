@@ -5,10 +5,13 @@ using System.Text;
 namespace Allyn.Cqrs.Commands
 {
     /// <summary>
-    /// Represents the "command" type.
+    /// A marker interface for base which define a command.
     /// </summary>
     public interface ICommand
     {
+        /// <summary>
+        /// Get command identification.
+        /// </summary>
         Guid Id { get; }
     }
 }
